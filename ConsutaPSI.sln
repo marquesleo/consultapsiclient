@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsultaPSI", "ConsultaPSI\ConsultaPSI.csproj", "{1C4948F0-61BF-4DCE-8243-C1CAA539AB2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BOPSI", "BOPSI\BOPSI.csproj", "{2FC16E5A-8C58-40A7-BA07-610FB983A1A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSIClient", "PSIClient\PSIClient.csproj", "{B88C3CB2-F240-4870-846D-ABF92CCB01CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "Dominio\Dominio.csproj", "{47533008-230B-4D82-977C-7C1C405B1094}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{57EEE270-055D-444E-8F54-E83C0A904DF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bibliotecas", "Bibliotecas", "{E59D02AB-89BD-4484-9E6E-D11250D6CB85}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Sistemas\ORCAMENTO\Lutils.dll = ..\..\..\Sistemas\ORCAMENTO\Lutils.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C4948F0-61BF-4DCE-8243-C1CAA539AB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C4948F0-61BF-4DCE-8243-C1CAA539AB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C4948F0-61BF-4DCE-8243-C1CAA539AB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C4948F0-61BF-4DCE-8243-C1CAA539AB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC16E5A-8C58-40A7-BA07-610FB983A1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC16E5A-8C58-40A7-BA07-610FB983A1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC16E5A-8C58-40A7-BA07-610FB983A1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC16E5A-8C58-40A7-BA07-610FB983A1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88C3CB2-F240-4870-846D-ABF92CCB01CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88C3CB2-F240-4870-846D-ABF92CCB01CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88C3CB2-F240-4870-846D-ABF92CCB01CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88C3CB2-F240-4870-846D-ABF92CCB01CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47533008-230B-4D82-977C-7C1C405B1094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47533008-230B-4D82-977C-7C1C405B1094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47533008-230B-4D82-977C-7C1C405B1094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47533008-230B-4D82-977C-7C1C405B1094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EEE270-055D-444E-8F54-E83C0A904DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EEE270-055D-444E-8F54-E83C0A904DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EEE270-055D-444E-8F54-E83C0A904DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EEE270-055D-444E-8F54-E83C0A904DF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {882E8FD7-57B4-4C70-9334-78F41C5A7FBC}
+	EndGlobalSection
+EndGlobal
