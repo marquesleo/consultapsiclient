@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\..\Sistemas\ConsultaPSI\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -31,6 +31,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>44_113675.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -102,6 +105,12 @@
       <DependentUpon>FrmConsultaAgendamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Consulta\ViewModel\ConsultaViewModel.cs" />
+    <Compile Include="Empresa\FrmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empresa\FrmEmpresa.Designer.cs">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +177,9 @@
     <EmbeddedResource Include="Consulta\FrmConsultaAgendamento.resx">
       <DependentUpon>FrmConsultaAgendamento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empresa\FrmEmpresa.resx">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +245,8 @@
       <Name>Util</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="44_113675.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,15 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace ConsultaPSI
 {
     public partial class FrmPrincipal : Form
     {
         public FrmPrincipal()
         {
             InitializeComponent();
+            frm = this;
         }
-        
+
+        public static FrmPrincipal frm;
 
         private void FrmPrincipal_Shown(object sender, EventArgs e)
         {
@@ -71,7 +73,7 @@ namespace WindowsFormsApp1
             splashScreenManager1.CloseWaitForm();
         }
 
-        private async Task RetornarConsultasNaoRealizadas()
+        public async Task RetornarConsultasNaoRealizadas()
         {
             try
             {
@@ -210,6 +212,19 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void ChamarTelaDeCadastroDeEmpresa()
+        {
+            try
+            {
+                var frm = new ConsultaPSI.Empresa.FrmEmpresa();
+                frm.Show();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
         private ConsultaPSI.Consulta.ViewModel.ConsultaViewModel getSelecionado
         {
             get
@@ -280,6 +295,11 @@ namespace WindowsFormsApp1
         private void grdConsulta_DoubleClick(object sender, EventArgs e)
         {
             Alterar();
+        }
+
+        private void btnEmpresa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            ChamarTelaDeCadastroDeEmpresa();
         }
     }
 }

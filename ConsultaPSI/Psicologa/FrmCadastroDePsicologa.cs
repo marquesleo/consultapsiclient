@@ -156,9 +156,11 @@ namespace ConsultaPSI.Psicologa
                         await PsicologaService.Incluir(_psicologaViewModel);
                         XtraMessageBox.Show("Registro Incluído!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         houveInclusao = true;
+                        if (FrmPsicologa.frm != null)
+                           await  FrmPsicologa.frm.EfetuarConsulta();
                         Limpar();
                         
-                        break;
+                        break; 
                     case enuOperacao.Alterar:
                         _psicologaViewModel.Id = codigoPsicologo;
                         await PsicologaService.Alterar(_psicologaViewModel);

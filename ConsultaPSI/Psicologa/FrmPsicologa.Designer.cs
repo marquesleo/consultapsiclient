@@ -105,8 +105,8 @@ namespace ConsultaPSI.Psicologa
             this.grdPsicologo.AppearancePrint.FilterPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.grdPsicologo.AppearancePrint.FilterPanel.Options.UseFont = true;
             this.grdPsicologo.AppearancePrint.FilterPanel.Options.UseForeColor = true;
-            this.grdPsicologo.DetailHeight = 512;
-            this.grdPsicologo.FixedLineWidth = 3;
+            this.grdPsicologo.DetailHeight = 788;
+            this.grdPsicologo.FixedLineWidth = 5;
             this.grdPsicologo.GridControl = this.dgrdPsicologo;
             this.grdPsicologo.GroupPanelText = "Arraste uma coluna para Agrupar";
             this.grdPsicologo.Name = "grdPsicologo";
@@ -127,15 +127,15 @@ namespace ConsultaPSI.Psicologa
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgrdPsicologo.CausesValidation = false;
             this.dgrdPsicologo.EmbeddedNavigator.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.dgrdPsicologo.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.dgrdPsicologo.Location = new System.Drawing.Point(0, 55);
+            this.dgrdPsicologo.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dgrdPsicologo.Location = new System.Drawing.Point(0, 85);
             this.dgrdPsicologo.LookAndFeel.SkinName = "Blue";
             this.dgrdPsicologo.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.Office2003;
             this.dgrdPsicologo.LookAndFeel.UseWindowsXPTheme = true;
             this.dgrdPsicologo.MainView = this.grdPsicologo;
-            this.dgrdPsicologo.Margin = new System.Windows.Forms.Padding(4);
+            this.dgrdPsicologo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgrdPsicologo.Name = "dgrdPsicologo";
-            this.dgrdPsicologo.Size = new System.Drawing.Size(998, 629);
+            this.dgrdPsicologo.Size = new System.Drawing.Size(1497, 968);
             this.dgrdPsicologo.TabIndex = 15;
             this.dgrdPsicologo.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdPsicologo});
@@ -171,10 +171,10 @@ namespace ConsultaPSI.Psicologa
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 44);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 64);
             this.barDockControlLeft.Manager = this.barManager;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 646);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 998);
             // 
             // barManager
             // 
@@ -296,26 +296,26 @@ namespace ConsultaPSI.Psicologa
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(998, 44);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlTop.Size = new System.Drawing.Size(1497, 64);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 690);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1062);
             this.barDockControlBottom.Manager = this.barManager;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(998, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1497, 0);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(998, 44);
+            this.barDockControlRight.Location = new System.Drawing.Point(1497, 64);
             this.barDockControlRight.Manager = this.barManager;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 646);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 998);
             // 
             // btnLancamento
             // 
@@ -430,15 +430,14 @@ namespace ConsultaPSI.Psicologa
             // 
             // FrmPsicologa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 690);
+            this.ClientSize = new System.Drawing.Size(1497, 1062);
             this.Controls.Add(this.dgrdPsicologo);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPsicologa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Psicologos";

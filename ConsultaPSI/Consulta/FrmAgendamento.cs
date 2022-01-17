@@ -133,6 +133,7 @@ namespace ConsultaPSI.Consulta
                         await consultaService.Incluir(_ConsultaViewModel);
                         XtraMessageBox.Show("Registro Incluído com sucesso!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Limpar();
+                        await ConsultaPSI.FrmPrincipal.frm.RetornarConsultasNaoRealizadas();
                         break;
                     default:
                         break;

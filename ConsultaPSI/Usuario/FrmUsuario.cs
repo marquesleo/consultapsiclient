@@ -42,7 +42,7 @@ namespace ConsultaPSI.Usuario
             lstLoginViewModel.Clear();
             try
             {
-                lstLoginViewModel = await UsuarioService.ObterTodos();
+                lstLoginViewModel = await UsuarioService.ObterTodos(Guid.Parse(Util.Usuario.UsuarioLogado.acesso.empresa_Id));
                 dgrdUsuario.DataSource = lstLoginViewModel;
                 FormatarGrid();
             }

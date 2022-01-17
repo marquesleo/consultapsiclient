@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using Dominio.ViewModel;
 using BOPSI;
 using DevExpress.XtraEditors;
+using System.Threading.Tasks;
 
 namespace ConsultaPSI.Usuario
 {
@@ -78,8 +79,7 @@ namespace ConsultaPSI.Usuario
             _oUsuario.Email = txtEmail.Text;
             _oUsuario.Id = codigoUsuario;
             _oUsuario.Ativo = chkSituacao.Checked;
-
-
+            _oUsuario.Empresa_Id = Guid.Parse(Util.Usuario.UsuarioLogado.acesso.empresa_Id);
         }
 
 
@@ -91,7 +91,6 @@ namespace ConsultaPSI.Usuario
             codigoUsuario = _oUsuario.Id;
             chkSituacao.Checked = _oUsuario.Ativo;
             txtEmail.Text = _oUsuario.Email;
-
         }
 
         private void validarRegistroParaGravacao()
@@ -138,7 +137,7 @@ namespace ConsultaPSI.Usuario
             _houveInclusao = false;
         }
 
-        private void gravarRegistro()
+        private  async Task gravarRegistro()
         {
             this.carregarObjeto();
             switch (_operacao)
@@ -146,10 +145,10 @@ namespace ConsultaPSI.Usuario
                 case enuOperacao.Incluir:
                     try
                     {
-                        UsuarioService.Incluir(_oUsuario);
+                        await UsuarioService.Incluir(_oUsuario);
                         XtraMessageBox.Show("Registro Incluído com Sucesso !!", this.Text, System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                         if (FrmUsuario.frm != null)
-                            FrmUsuario.frm.EfetuarConsultaAsync();
+                            await FrmUsuario.frm.EfetuarConsultaAsync();
                         this.limpar();
                         _houveInclusao = true;
                         if (_somenteIncluir)
@@ -164,10 +163,10 @@ namespace ConsultaPSI.Usuario
                 case enuOperacao.Alterar:
                     try
                     {
-                        UsuarioService.Alterar(_oUsuario);
+                       await UsuarioService.Alterar(_oUsuario);
                         XtraMessageBox.Show("Registro Alterado com Sucesso !!", this.Text, System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Information);
                         if (FrmUsuario.frm != null)
-                            FrmUsuario.frm.EfetuarConsultaAsync();
+                           await FrmUsuario.frm.EfetuarConsultaAsync();
                         this.Close();
                     }
                     catch (Exception ex)
@@ -194,6 +193,7 @@ namespace ConsultaPSI.Usuario
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.limpar();
+            chkSituacao.Checked = true;
         }
 
         private void FrmCadastroDeUsuario_Load(object sender, EventArgs e)
@@ -202,7 +202,8 @@ namespace ConsultaPSI.Usuario
             {
                 codigoUsuario = _oUsuario.Id;
                 this.carregarRegistro();
-            }
+            }else 
+            chkSituacao.Checked = true;
 
         }
     }

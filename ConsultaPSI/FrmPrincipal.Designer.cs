@@ -1,5 +1,5 @@
 ﻿
-namespace WindowsFormsApp1
+namespace ConsultaPSI
 {
     partial class FrmPrincipal
     {
@@ -186,6 +186,7 @@ namespace WindowsFormsApp1
             this.txtPaciente = new DevExpress.XtraEditors.TextEdit();
             this.lblPaciente = new DevExpress.XtraEditors.LabelControl();
             this.lblFiltro = new DevExpress.XtraEditors.LabelControl();
+            this.btnEmpresa = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ColecaoDeImagemPequeno)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ColecaoImagemMedio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rbnPrincipal)).BeginInit();
@@ -363,10 +364,12 @@ namespace WindowsFormsApp1
             this.btnUnidadeDeMedida,
             this.btnSetor,
             this.btnProduto,
-            this.btnConsultaAgendamento});
+            this.btnConsultaAgendamento,
+            this.btnEmpresa});
             this.rbnPrincipal.LargeImages = this.imageCollection2;
             this.rbnPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.rbnPrincipal.MaxItemId = 222;
+            this.rbnPrincipal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rbnPrincipal.MaxItemId = 223;
             this.rbnPrincipal.Name = "rbnPrincipal";
             this.rbnPrincipal.PageCategoryAlignment = DevExpress.XtraBars.Ribbon.RibbonPageCategoryAlignment.Right;
             this.rbnPrincipal.PageHeaderItemLinks.Add(this.biStyle);
@@ -377,7 +380,7 @@ namespace WindowsFormsApp1
             this.rbPageOutrasFuncoes});
             this.rbnPrincipal.QuickToolbarItemLinks.Add(this.iPaintStyle);
             this.rbnPrincipal.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
-            this.rbnPrincipal.Size = new System.Drawing.Size(969, 139);
+            this.rbnPrincipal.Size = new System.Drawing.Size(1454, 199);
             this.rbnPrincipal.TransparentEditorsMode = DevExpress.Utils.DefaultBoolean.True;
             // 
             // imageCollection1
@@ -1534,6 +1537,7 @@ namespace WindowsFormsApp1
             this.rbLancamentoDeContasAReceber.ItemLinks.Add(this.btnUsuarioCadastro);
             this.rbLancamentoDeContasAReceber.ItemLinks.Add(this.btnCadastroDePaciente);
             this.rbLancamentoDeContasAReceber.ItemLinks.Add(this.btnCadastroDeTipoDeRecebimento);
+            this.rbLancamentoDeContasAReceber.ItemLinks.Add(this.btnEmpresa);
             this.rbLancamentoDeContasAReceber.Name = "rbLancamentoDeContasAReceber";
             this.rbLancamentoDeContasAReceber.Text = "Cadastros";
             // 
@@ -1559,14 +1563,14 @@ namespace WindowsFormsApp1
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgrdConsulta.CausesValidation = false;
             this.dgrdConsulta.EmbeddedNavigator.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.dgrdConsulta.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.dgrdConsulta.Location = new System.Drawing.Point(0, 202);
+            this.dgrdConsulta.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
+            this.dgrdConsulta.Location = new System.Drawing.Point(0, 311);
             this.dgrdConsulta.LookAndFeel.SkinName = "Seven Classic";
             this.dgrdConsulta.LookAndFeel.UseWindowsXPTheme = true;
             this.dgrdConsulta.MainView = this.grdConsulta;
-            this.dgrdConsulta.Margin = new System.Windows.Forms.Padding(4);
+            this.dgrdConsulta.Margin = new System.Windows.Forms.Padding(6);
             this.dgrdConsulta.Name = "dgrdConsulta";
-            this.dgrdConsulta.Size = new System.Drawing.Size(956, 482);
+            this.dgrdConsulta.Size = new System.Drawing.Size(1434, 742);
             this.dgrdConsulta.TabIndex = 17;
             this.dgrdConsulta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grdConsulta});
@@ -1595,8 +1599,8 @@ namespace WindowsFormsApp1
             this.grdConsulta.AppearancePrint.FilterPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.grdConsulta.AppearancePrint.FilterPanel.Options.UseFont = true;
             this.grdConsulta.AppearancePrint.FilterPanel.Options.UseForeColor = true;
-            this.grdConsulta.DetailHeight = 512;
-            this.grdConsulta.FixedLineWidth = 3;
+            this.grdConsulta.DetailHeight = 788;
+            this.grdConsulta.FixedLineWidth = 5;
             this.grdConsulta.GridControl = this.dgrdConsulta;
             this.grdConsulta.GroupPanelText = "Arraste uma coluna para Agrupar";
             this.grdConsulta.Name = "grdConsulta";
@@ -1632,19 +1636,19 @@ namespace WindowsFormsApp1
             this.panelControlFiltro.Controls.Add(this.txtPaciente);
             this.panelControlFiltro.Controls.Add(this.lblPaciente);
             this.panelControlFiltro.Controls.Add(this.lblFiltro);
-            this.panelControlFiltro.Location = new System.Drawing.Point(0, 144);
+            this.panelControlFiltro.Location = new System.Drawing.Point(0, 222);
             this.panelControlFiltro.LookAndFeel.SkinMaskColor = System.Drawing.SystemColors.ActiveCaption;
             this.panelControlFiltro.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.panelControlFiltro.Margin = new System.Windows.Forms.Padding(2);
             this.panelControlFiltro.Name = "panelControlFiltro";
-            this.panelControlFiltro.Size = new System.Drawing.Size(969, 58);
+            this.panelControlFiltro.Size = new System.Drawing.Size(1454, 89);
             this.panelControlFiltro.TabIndex = 19;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(841, 10);
+            this.btnPesquisar.Location = new System.Drawing.Point(1262, 15);
+            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(75, 38);
+            this.btnPesquisar.Size = new System.Drawing.Size(112, 58);
             this.btnPesquisar.TabIndex = 7;
             this.btnPesquisar.Text = "PESQUISAR";
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -1652,7 +1656,8 @@ namespace WindowsFormsApp1
             // dateEditDia
             // 
             this.dateEditDia.EditValue = null;
-            this.dateEditDia.Location = new System.Drawing.Point(696, 17);
+            this.dateEditDia.Location = new System.Drawing.Point(1044, 26);
+            this.dateEditDia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateEditDia.MenuManager = this.rbnPrincipal;
             this.dateEditDia.Name = "dateEditDia";
             this.dateEditDia.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1661,56 +1666,61 @@ namespace WindowsFormsApp1
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEditDia.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditDia.Size = new System.Drawing.Size(116, 26);
+            this.dateEditDia.Size = new System.Drawing.Size(174, 38);
             this.dateEditDia.TabIndex = 6;
             // 
             // lblDia
             // 
             this.lblDia.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDia.Appearance.Options.UseFont = true;
-            this.lblDia.Location = new System.Drawing.Point(661, 17);
+            this.lblDia.Location = new System.Drawing.Point(992, 26);
+            this.lblDia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblDia.Name = "lblDia";
-            this.lblDia.Size = new System.Drawing.Size(29, 19);
+            this.lblDia.Size = new System.Drawing.Size(42, 29);
             this.lblDia.TabIndex = 5;
             this.lblDia.Text = "Dia:";
             // 
             // txtPsicologo
             // 
-            this.txtPsicologo.Location = new System.Drawing.Point(495, 17);
+            this.txtPsicologo.Location = new System.Drawing.Point(742, 26);
+            this.txtPsicologo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPsicologo.MenuManager = this.rbnPrincipal;
             this.txtPsicologo.Name = "txtPsicologo";
             this.txtPsicologo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPsicologo.Properties.Appearance.Options.UseFont = true;
-            this.txtPsicologo.Size = new System.Drawing.Size(144, 26);
+            this.txtPsicologo.Size = new System.Drawing.Size(216, 38);
             this.txtPsicologo.TabIndex = 4;
             // 
             // lblPsicologo
             // 
             this.lblPsicologo.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPsicologo.Appearance.Options.UseFont = true;
-            this.lblPsicologo.Location = new System.Drawing.Point(416, 20);
+            this.lblPsicologo.Location = new System.Drawing.Point(624, 31);
+            this.lblPsicologo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblPsicologo.Name = "lblPsicologo";
-            this.lblPsicologo.Size = new System.Drawing.Size(73, 19);
+            this.lblPsicologo.Size = new System.Drawing.Size(105, 29);
             this.lblPsicologo.TabIndex = 3;
             this.lblPsicologo.Text = "Psicólogo:";
             // 
             // txtPaciente
             // 
-            this.txtPaciente.Location = new System.Drawing.Point(236, 17);
+            this.txtPaciente.Location = new System.Drawing.Point(354, 26);
+            this.txtPaciente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPaciente.MenuManager = this.rbnPrincipal;
             this.txtPaciente.Name = "txtPaciente";
             this.txtPaciente.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPaciente.Properties.Appearance.Options.UseFont = true;
-            this.txtPaciente.Size = new System.Drawing.Size(162, 26);
+            this.txtPaciente.Size = new System.Drawing.Size(243, 38);
             this.txtPaciente.TabIndex = 2;
             // 
             // lblPaciente
             // 
             this.lblPaciente.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaciente.Appearance.Options.UseFont = true;
-            this.lblPaciente.Location = new System.Drawing.Point(166, 20);
+            this.lblPaciente.Location = new System.Drawing.Point(249, 31);
+            this.lblPaciente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblPaciente.Name = "lblPaciente";
-            this.lblPaciente.Size = new System.Drawing.Size(64, 19);
+            this.lblPaciente.Size = new System.Drawing.Size(97, 29);
             this.lblPaciente.TabIndex = 1;
             this.lblPaciente.Text = "Paciente:";
             // 
@@ -1718,21 +1728,30 @@ namespace WindowsFormsApp1
             // 
             this.lblFiltro.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFiltro.Appearance.Options.UseFont = true;
-            this.lblFiltro.Location = new System.Drawing.Point(12, 20);
+            this.lblFiltro.Location = new System.Drawing.Point(18, 31);
+            this.lblFiltro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lblFiltro.Name = "lblFiltro";
-            this.lblFiltro.Size = new System.Drawing.Size(118, 19);
+            this.lblFiltro.Size = new System.Drawing.Size(172, 29);
             this.lblFiltro.TabIndex = 0;
             this.lblFiltro.Text = "FILTRAR POR:";
             // 
+            // btnEmpresa
+            // 
+            this.btnEmpresa.Caption = "Empresa";
+            this.btnEmpresa.Id = 222;
+            this.btnEmpresa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpresa.ImageOptions.Image")));
+            this.btnEmpresa.Name = "btnEmpresa";
+            this.btnEmpresa.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.btnEmpresa.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEmpresa_ItemClick);
+            // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 690);
+            this.ClientSize = new System.Drawing.Size(1454, 1050);
             this.Controls.Add(this.panelControlFiltro);
             this.Controls.Add(this.dgrdConsulta);
             this.Controls.Add(this.rbnPrincipal);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta PSI";
@@ -1908,6 +1927,7 @@ namespace WindowsFormsApp1
         private DevExpress.XtraEditors.TextEdit txtPaciente;
         private DevExpress.XtraEditors.LabelControl lblPaciente;
         private DevExpress.XtraEditors.LabelControl lblFiltro;
+        private DevExpress.XtraBars.BarButtonItem btnEmpresa;
     }
 }
 

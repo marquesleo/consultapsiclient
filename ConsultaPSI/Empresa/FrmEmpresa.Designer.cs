@@ -1,7 +1,7 @@
 ﻿
-namespace ConsultaPSI.Psicologa
+namespace ConsultaPSI.Empresa
 {
-    partial class FrmCadastroDePsicologa
+    partial class FrmEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,10 @@ namespace ConsultaPSI.Psicologa
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroDePsicologa));
-            this.grpLancamento = new DevExpress.XtraEditors.GroupControl();
-            this.txtCRP = new DevExpress.XtraEditors.TextEdit();
-            this.lblCrP = new System.Windows.Forms.Label();
-            this.chkAtivo = new DevExpress.XtraEditors.CheckEdit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEmpresa));
+            this.btnSair = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.btnConfirmar = new DevExpress.XtraEditors.SimpleButton();
             this.btnBuscarCEPNaInternet = new DevExpress.XtraEditors.SimpleButton();
             this.txtCidade = new DevExpress.XtraEditors.TextEdit();
             this.lblCidade = new DevExpress.XtraEditors.LabelControl();
@@ -49,17 +48,10 @@ namespace ConsultaPSI.Psicologa
             this.txtCelular = new DevExpress.XtraEditors.TextEdit();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.dtpNascimento = new DevExpress.XtraEditors.DateEdit();
             this.txtNomeCompleto = new DevExpress.XtraEditors.TextEdit();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblNascimento = new DevExpress.XtraEditors.LabelControl();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnConfirmar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.grpLancamento)).BeginInit();
-            this.grpLancamento.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCRP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkAtivo.Properties)).BeginInit();
+            this.txtCnpj = new DevExpress.XtraEditors.TextEdit();
+            this.lblCnpj = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txtCidade.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairro.Properties)).BeginInit();
@@ -67,89 +59,60 @@ namespace ConsultaPSI.Psicologa
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCelular.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNascimento.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNascimento.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeCompleto.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCnpj.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // grpLancamento
+            // btnSair
             // 
-            this.grpLancamento.Controls.Add(this.txtCRP);
-            this.grpLancamento.Controls.Add(this.lblCrP);
-            this.grpLancamento.Controls.Add(this.chkAtivo);
-            this.grpLancamento.Controls.Add(this.btnBuscarCEPNaInternet);
-            this.grpLancamento.Controls.Add(this.txtCidade);
-            this.grpLancamento.Controls.Add(this.lblCidade);
-            this.grpLancamento.Controls.Add(this.txtEndereco);
-            this.grpLancamento.Controls.Add(this.txtBairro);
-            this.grpLancamento.Controls.Add(this.lblEndereco);
-            this.grpLancamento.Controls.Add(this.lblBairro);
-            this.grpLancamento.Controls.Add(this.txtCep);
-            this.grpLancamento.Controls.Add(this.lblCep);
-            this.grpLancamento.Controls.Add(this.lblTelefone);
-            this.grpLancamento.Controls.Add(this.lblCelular);
-            this.grpLancamento.Controls.Add(this.txtTelefone);
-            this.grpLancamento.Controls.Add(this.txtCelular);
-            this.grpLancamento.Controls.Add(this.txtEmail);
-            this.grpLancamento.Controls.Add(this.lblEmail);
-            this.grpLancamento.Controls.Add(this.dtpNascimento);
-            this.grpLancamento.Controls.Add(this.txtNomeCompleto);
-            this.grpLancamento.Controls.Add(this.lblNome);
-            this.grpLancamento.Controls.Add(this.lblNascimento);
-            this.grpLancamento.Controls.Add(this.btnSair);
-            this.grpLancamento.Controls.Add(this.btnCancelar);
-            this.grpLancamento.Controls.Add(this.btnConfirmar);
-            this.grpLancamento.Location = new System.Drawing.Point(12, 12);
-            this.grpLancamento.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.grpLancamento.Name = "grpLancamento";
-            this.grpLancamento.Size = new System.Drawing.Size(1005, 988);
-            this.grpLancamento.TabIndex = 1;
+            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSair.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnSair.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.ImageOptions.Image")));
+            this.btnSair.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnSair.Location = new System.Drawing.Point(889, 758);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(86, 78);
+            this.btnSair.TabIndex = 12;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
-            // txtCRP
+            // btnCancelar
             // 
-            this.txtCRP.Location = new System.Drawing.Point(381, 172);
-            this.txtCRP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.txtCRP.Name = "txtCRP";
-            this.txtCRP.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCRP.Properties.Appearance.Options.UseFont = true;
-            this.txtCRP.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCRP.Size = new System.Drawing.Size(594, 38);
-            this.txtCRP.TabIndex = 3;
+            this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCancelar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnCancelar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.ImageOptions.Image")));
+            this.btnCancelar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnCancelar.Location = new System.Drawing.Point(787, 758);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(86, 78);
+            this.btnCancelar.TabIndex = 11;
             // 
-            // lblCrP
+            // btnConfirmar
             // 
-            this.lblCrP.AutoSize = true;
-            this.lblCrP.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCrP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.lblCrP.Location = new System.Drawing.Point(375, 137);
-            this.lblCrP.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblCrP.Name = "lblCrP";
-            this.lblCrP.Size = new System.Drawing.Size(55, 29);
-            this.lblCrP.TabIndex = 89;
-            this.lblCrP.Text = "CRP";
-            // 
-            // chkAtivo
-            // 
-            this.chkAtivo.Location = new System.Drawing.Point(276, 174);
-            this.chkAtivo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.chkAtivo.Name = "chkAtivo";
-            this.chkAtivo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAtivo.Properties.Appearance.Options.UseFont = true;
-            this.chkAtivo.Properties.Caption = "Ativo";
-            this.chkAtivo.Size = new System.Drawing.Size(196, 35);
-            this.chkAtivo.TabIndex = 2;
+            this.btnConfirmar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConfirmar.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
+            this.btnConfirmar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirmar.ImageOptions.Image")));
+            this.btnConfirmar.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnConfirmar.Location = new System.Drawing.Point(683, 758);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.ShowToolTips = false;
+            this.btnConfirmar.Size = new System.Drawing.Size(88, 78);
+            this.btnConfirmar.TabIndex = 10;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnBuscarCEPNaInternet
             // 
             this.btnBuscarCEPNaInternet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCEPNaInternet.ImageOptions.Image")));
             this.btnBuscarCEPNaInternet.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnBuscarCEPNaInternet.Location = new System.Drawing.Point(332, 443);
+            this.btnBuscarCEPNaInternet.Location = new System.Drawing.Point(342, 383);
             this.btnBuscarCEPNaInternet.LookAndFeel.UseDefaultLookAndFeel = false;
             this.btnBuscarCEPNaInternet.LookAndFeel.UseWindowsXPTheme = true;
-            this.btnBuscarCEPNaInternet.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnBuscarCEPNaInternet.Margin = new System.Windows.Forms.Padding(6);
             this.btnBuscarCEPNaInternet.Name = "btnBuscarCEPNaInternet";
             this.btnBuscarCEPNaInternet.Size = new System.Drawing.Size(224, 58);
-            this.btnBuscarCEPNaInternet.TabIndex = 8;
+            this.btnBuscarCEPNaInternet.TabIndex = 6;
             this.btnBuscarCEPNaInternet.Text = "Buscar CEP na Web";
             this.btnBuscarCEPNaInternet.ToolTip = "Buscar CEP na Web";
             this.btnBuscarCEPNaInternet.ToolTipTitle = "Incluir";
@@ -157,75 +120,75 @@ namespace ConsultaPSI.Psicologa
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(27, 738);
-            this.txtCidade.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCidade.Location = new System.Drawing.Point(37, 683);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(6);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Properties.Appearance.Options.UseFont = true;
             this.txtCidade.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtCidade.Size = new System.Drawing.Size(938, 38);
-            this.txtCidade.TabIndex = 11;
+            this.txtCidade.TabIndex = 9;
             // 
             // lblCidade
             // 
             this.lblCidade.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidade.Appearance.Options.UseFont = true;
-            this.lblCidade.Location = new System.Drawing.Point(28, 697);
-            this.lblCidade.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lblCidade.Location = new System.Drawing.Point(38, 642);
+            this.lblCidade.Margin = new System.Windows.Forms.Padding(6);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(71, 29);
-            this.lblCidade.TabIndex = 87;
+            this.lblCidade.TabIndex = 104;
             this.lblCidade.Text = "Cidade";
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(30, 651);
-            this.txtEndereco.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtEndereco.Location = new System.Drawing.Point(40, 596);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(6);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEndereco.Properties.Appearance.Options.UseFont = true;
             this.txtEndereco.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtEndereco.Size = new System.Drawing.Size(938, 38);
-            this.txtEndereco.TabIndex = 10;
+            this.txtEndereco.TabIndex = 8;
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(28, 548);
-            this.txtBairro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtBairro.Location = new System.Drawing.Point(38, 493);
+            this.txtBairro.Margin = new System.Windows.Forms.Padding(6);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Properties.Appearance.Options.UseFont = true;
             this.txtBairro.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtBairro.Size = new System.Drawing.Size(938, 38);
-            this.txtBairro.TabIndex = 9;
+            this.txtBairro.TabIndex = 7;
             // 
             // lblEndereco
             // 
             this.lblEndereco.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.Appearance.Options.UseFont = true;
-            this.lblEndereco.Location = new System.Drawing.Point(30, 603);
-            this.lblEndereco.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lblEndereco.Location = new System.Drawing.Point(40, 548);
+            this.lblEndereco.Margin = new System.Windows.Forms.Padding(6);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(98, 29);
-            this.lblEndereco.TabIndex = 84;
+            this.lblEndereco.TabIndex = 103;
             this.lblEndereco.Text = "Endereço";
             // 
             // lblBairro
             // 
             this.lblBairro.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBairro.Appearance.Options.UseFont = true;
-            this.lblBairro.Location = new System.Drawing.Point(30, 506);
-            this.lblBairro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lblBairro.Location = new System.Drawing.Point(40, 451);
+            this.lblBairro.Margin = new System.Windows.Forms.Padding(6);
             this.lblBairro.Name = "lblBairro";
             this.lblBairro.Size = new System.Drawing.Size(63, 29);
-            this.lblBairro.TabIndex = 83;
+            this.lblBairro.TabIndex = 102;
             this.lblBairro.Text = "Bairro";
             // 
             // txtCep
             // 
             this.txtCep.EditValue = "";
-            this.txtCep.Location = new System.Drawing.Point(28, 449);
-            this.txtCep.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCep.Location = new System.Drawing.Point(38, 395);
+            this.txtCep.Margin = new System.Windows.Forms.Padding(6);
             this.txtCep.Name = "txtCep";
             this.txtCep.Properties.Appearance.Options.UseFont = true;
             this.txtCep.Properties.LookAndFeel.Style = DevExpress.LookAndFeel.LookAndFeelStyle.UltraFlat;
@@ -234,18 +197,18 @@ namespace ConsultaPSI.Psicologa
             this.txtCep.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Regular;
             this.txtCep.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCep.Size = new System.Drawing.Size(273, 28);
-            this.txtCep.TabIndex = 7;
+            this.txtCep.TabIndex = 5;
             this.txtCep.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCep_KeyDown);
             // 
             // lblCep
             // 
             this.lblCep.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCep.Appearance.Options.UseFont = true;
-            this.lblCep.Location = new System.Drawing.Point(30, 408);
-            this.lblCep.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lblCep.Location = new System.Drawing.Point(40, 357);
+            this.lblCep.Margin = new System.Windows.Forms.Padding(6);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(40, 29);
-            this.lblCep.TabIndex = 82;
+            this.lblCep.TabIndex = 101;
             this.lblCep.Text = "CEP";
             // 
             // lblTelefone
@@ -253,11 +216,11 @@ namespace ConsultaPSI.Psicologa
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.lblTelefone.Location = new System.Drawing.Point(326, 320);
+            this.lblTelefone.Location = new System.Drawing.Point(336, 272);
             this.lblTelefone.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(105, 29);
-            this.lblTelefone.TabIndex = 77;
+            this.lblTelefone.TabIndex = 100;
             this.lblTelefone.Text = "Telefone";
             // 
             // lblCelular
@@ -265,18 +228,18 @@ namespace ConsultaPSI.Psicologa
             this.lblCelular.AutoSize = true;
             this.lblCelular.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCelular.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.lblCelular.Location = new System.Drawing.Point(21, 320);
+            this.lblCelular.Location = new System.Drawing.Point(31, 272);
             this.lblCelular.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(85, 29);
-            this.lblCelular.TabIndex = 76;
+            this.lblCelular.TabIndex = 99;
             this.lblCelular.Text = "Celular";
             // 
             // txtTelefone
             // 
             this.txtTelefone.EditValue = "";
-            this.txtTelefone.Location = new System.Drawing.Point(332, 355);
-            this.txtTelefone.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtTelefone.Location = new System.Drawing.Point(342, 307);
+            this.txtTelefone.Margin = new System.Windows.Forms.Padding(6);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
@@ -288,13 +251,13 @@ namespace ConsultaPSI.Psicologa
             this.txtTelefone.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtTelefone.Properties.NullText = " ";
             this.txtTelefone.Size = new System.Drawing.Size(294, 38);
-            this.txtTelefone.TabIndex = 6;
+            this.txtTelefone.TabIndex = 4;
             // 
             // txtCelular
             // 
             this.txtCelular.EditValue = "";
-            this.txtCelular.Location = new System.Drawing.Point(24, 355);
-            this.txtCelular.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCelular.Location = new System.Drawing.Point(34, 307);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(6);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCelular.Properties.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
@@ -306,50 +269,34 @@ namespace ConsultaPSI.Psicologa
             this.txtCelular.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtCelular.Properties.NullText = " ";
             this.txtCelular.Size = new System.Drawing.Size(274, 38);
-            this.txtCelular.TabIndex = 5;
+            this.txtCelular.TabIndex = 3;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(24, 258);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtEmail.Location = new System.Drawing.Point(38, 226);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(6);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Properties.Appearance.Options.UseFont = true;
             this.txtEmail.Size = new System.Drawing.Size(951, 38);
-            this.txtEmail.TabIndex = 4;
+            this.txtEmail.TabIndex = 2;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.lblEmail.Location = new System.Drawing.Point(20, 228);
+            this.lblEmail.Location = new System.Drawing.Point(38, 191);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(78, 29);
-            this.lblEmail.TabIndex = 32;
+            this.lblEmail.TabIndex = 98;
             this.lblEmail.Text = "E-mail";
-            // 
-            // dtpNascimento
-            // 
-            this.dtpNascimento.EditValue = new System.DateTime(2013, 8, 16, 21, 20, 42, 40);
-            this.dtpNascimento.Location = new System.Drawing.Point(24, 172);
-            this.dtpNascimento.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.dtpNascimento.Name = "dtpNascimento";
-            this.dtpNascimento.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNascimento.Properties.Appearance.Options.UseFont = true;
-            this.dtpNascimento.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dtpNascimento.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.dtpNascimento.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.dtpNascimento.Size = new System.Drawing.Size(225, 38);
-            this.dtpNascimento.TabIndex = 1;
             // 
             // txtNomeCompleto
             // 
-            this.txtNomeCompleto.Location = new System.Drawing.Point(24, 88);
-            this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtNomeCompleto.Location = new System.Drawing.Point(34, 59);
+            this.txtNomeCompleto.Margin = new System.Windows.Forms.Padding(6);
             this.txtNomeCompleto.Name = "txtNomeCompleto";
             this.txtNomeCompleto.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNomeCompleto.Properties.Appearance.Options.UseFont = true;
@@ -362,78 +309,68 @@ namespace ConsultaPSI.Psicologa
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.lblNome.Location = new System.Drawing.Point(18, 52);
+            this.lblNome.Location = new System.Drawing.Point(28, 23);
             this.lblNome.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(182, 29);
-            this.lblNome.TabIndex = 23;
-            this.lblNome.Text = "Nome Completo";
+            this.lblNome.Size = new System.Drawing.Size(75, 29);
+            this.lblNome.TabIndex = 97;
+            this.lblNome.Text = "Nome";
             // 
-            // lblNascimento
+            // txtCnpj
             // 
-            this.lblNascimento.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNascimento.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
-            this.lblNascimento.Appearance.Options.UseFont = true;
-            this.lblNascimento.Appearance.Options.UseForeColor = true;
-            this.lblNascimento.Location = new System.Drawing.Point(27, 140);
-            this.lblNascimento.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.lblNascimento.Name = "lblNascimento";
-            this.lblNascimento.Size = new System.Drawing.Size(154, 29);
-            this.lblNascimento.TabIndex = 19;
-            this.lblNascimento.Text = "Dt.Nascimento";
+            this.txtCnpj.Location = new System.Drawing.Point(36, 144);
+            this.txtCnpj.Margin = new System.Windows.Forms.Padding(6);
+            this.txtCnpj.Name = "txtCnpj";
+            this.txtCnpj.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCnpj.Properties.Appearance.Options.UseFont = true;
+            this.txtCnpj.Properties.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtCnpj.Size = new System.Drawing.Size(951, 38);
+            this.txtCnpj.TabIndex = 1;
             // 
-            // btnSair
+            // lblCnpj
             // 
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.Location = new System.Drawing.Point(854, 869);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(112, 92);
-            this.btnSair.TabIndex = 13;
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.lblCnpj.AutoSize = true;
+            this.lblCnpj.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCnpj.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(31)))), ((int)(((byte)(53)))));
+            this.lblCnpj.Location = new System.Drawing.Point(30, 108);
+            this.lblCnpj.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblCnpj.Name = "lblCnpj";
+            this.lblCnpj.Size = new System.Drawing.Size(115, 29);
+            this.lblCnpj.TabIndex = 106;
+            this.lblCnpj.Text = "CNPJ/CPF";
             // 
-            // btnCancelar
+            // FrmEmpresa
             // 
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.Location = new System.Drawing.Point(728, 869);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 92);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnConfirmar
-            // 
-            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnConfirmar.Image = ((System.Drawing.Image)(resources.GetObject("btnConfirmar.Image")));
-            this.btnConfirmar.Location = new System.Drawing.Point(602, 869);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(112, 92);
-            this.btnConfirmar.TabIndex = 12;
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
-            // 
-            // FrmCadastroDePsicologa
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 1012);
-            this.Controls.Add(this.grpLancamento);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FrmCadastroDePsicologa";
+            this.ClientSize = new System.Drawing.Size(1011, 868);
+            this.Controls.Add(this.txtCnpj);
+            this.Controls.Add(this.lblCnpj);
+            this.Controls.Add(this.btnBuscarCEPNaInternet);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.lblCidade);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.lblEndereco);
+            this.Controls.Add(this.lblBairro);
+            this.Controls.Add(this.txtCep);
+            this.Controls.Add(this.lblCep);
+            this.Controls.Add(this.lblTelefone);
+            this.Controls.Add(this.lblCelular);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtCelular);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.txtNomeCompleto);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnConfirmar);
+            this.Name = "FrmEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Psicologos";
-            this.Load += new System.EventHandler(this.FrmCadastroDePacientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grpLancamento)).EndInit();
-            this.grpLancamento.ResumeLayout(false);
-            this.grpLancamento.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCRP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkAtivo.Properties)).EndInit();
+            this.Text = "Empresa";
+            this.Load += new System.EventHandler(this.FrmEmpresa_Load);
+            this.Shown += new System.EventHandler(this.FrmEmpresa_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.txtCidade.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEndereco.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtBairro.Properties)).EndInit();
@@ -441,29 +378,19 @@ namespace ConsultaPSI.Psicologa
             ((System.ComponentModel.ISupportInitialize)(this.txtTelefone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCelular.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNascimento.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtpNascimento.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNomeCompleto.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCnpj.Properties)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.GroupControl grpLancamento;
-        private DevExpress.XtraEditors.DateEdit dtpNascimento;
-        internal DevExpress.XtraEditors.TextEdit txtNomeCompleto;
-        private System.Windows.Forms.Label lblNome;
-        internal DevExpress.XtraEditors.LabelControl lblNascimento;
-        internal System.Windows.Forms.Button btnSair;
-        internal System.Windows.Forms.Button btnCancelar;
-        internal System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.Label lblCelular;
-        internal DevExpress.XtraEditors.TextEdit txtTelefone;
-        internal DevExpress.XtraEditors.TextEdit txtCelular;
-        internal DevExpress.XtraEditors.TextEdit txtEmail;
-        private System.Windows.Forms.Label lblEmail;
+        private DevExpress.XtraEditors.SimpleButton btnSair;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private DevExpress.XtraEditors.SimpleButton btnConfirmar;
+        private DevExpress.XtraEditors.SimpleButton btnBuscarCEPNaInternet;
         internal DevExpress.XtraEditors.TextEdit txtCidade;
         private DevExpress.XtraEditors.LabelControl lblCidade;
         internal DevExpress.XtraEditors.TextEdit txtEndereco;
@@ -472,9 +399,15 @@ namespace ConsultaPSI.Psicologa
         private DevExpress.XtraEditors.LabelControl lblBairro;
         internal DevExpress.XtraEditors.TextEdit txtCep;
         private DevExpress.XtraEditors.LabelControl lblCep;
-        private DevExpress.XtraEditors.SimpleButton btnBuscarCEPNaInternet;
-        private DevExpress.XtraEditors.CheckEdit chkAtivo;
-        internal DevExpress.XtraEditors.TextEdit txtCRP;
-        private System.Windows.Forms.Label lblCrP;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.Label lblCelular;
+        internal DevExpress.XtraEditors.TextEdit txtTelefone;
+        internal DevExpress.XtraEditors.TextEdit txtCelular;
+        internal DevExpress.XtraEditors.TextEdit txtEmail;
+        private System.Windows.Forms.Label lblEmail;
+        internal DevExpress.XtraEditors.TextEdit txtNomeCompleto;
+        private System.Windows.Forms.Label lblNome;
+        internal DevExpress.XtraEditors.TextEdit txtCnpj;
+        private System.Windows.Forms.Label lblCnpj;
     }
 }

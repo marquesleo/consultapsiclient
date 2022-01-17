@@ -16,7 +16,10 @@ namespace ConsultaPSI.Psicologa
         public FrmPsicologa()
         {
             InitializeComponent();
+            frm = this;
         }
+
+        public static FrmPsicologa frm;
 
         private BOPSI.PsicologaService _PsicologaService;
         private BOPSI.PsicologaService PsicologaService
@@ -96,7 +99,7 @@ namespace ConsultaPSI.Psicologa
             }
 
         }
-        private void EfetuarConsulta()
+        public async Task EfetuarConsulta()
         {
             OnBeginRefresh();
             try

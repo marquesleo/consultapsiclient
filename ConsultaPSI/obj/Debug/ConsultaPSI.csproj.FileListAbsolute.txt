@@ -48,7 +48,6 @@ C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\bin\Debug\de\DevExpress.Pdf.v18.2.C
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\bin\Debug\es\DevExpress.Pdf.v18.2.Core.resources.dll
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\bin\Debug\ja\DevExpress.Pdf.v18.2.Core.resources.dll
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\bin\Debug\ru\DevExpress.Pdf.v18.2.Core.resources.dll
-C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\WindowsFormsApp1.FrmPrincipal.resources
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Properties.Resources.resources
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Usuario.FrmLoginUsuario.resources
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.csproj.GenerateResource.cache
@@ -228,3 +227,8 @@ C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Psicologa.Frm
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Consulta.FrmAgendamento.resources
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Consulta.FrmConsultaAgendamento.resources
 C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Consulta.FrmAlterarConsulta.resources
+C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.Empresa.FrmEmpresa.resources
+C:\Fontes\ConsultaPsi\ConsutaPSI\ConsultaPSI\obj\Debug\ConsultaPSI.FrmPrincipal.resources
+C:\Sistemas\ConsultaPSI\ConsultaPSI.exe.config
+C:\Sistemas\ConsultaPSI\ConsultaPSI.exe
+C:\Sistemas\ConsultaPSI\ConsultaPSI.pdb

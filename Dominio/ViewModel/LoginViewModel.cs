@@ -21,6 +21,7 @@ namespace Dominio.ViewModel
         public string Password { get; set; }
         public bool Ativo { get; set; }
 
+        public Guid Empresa_Id { get; set; }
 
         public AcessoViewModel Acesso { get; set; }
 

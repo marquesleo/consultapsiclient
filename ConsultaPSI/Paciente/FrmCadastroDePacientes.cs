@@ -155,6 +155,8 @@ namespace ConsultaPSI.Paciente
                         await PacienteService.Incluir(_pacienteViewModel);
                         XtraMessageBox.Show("Registro Incluído!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         houveInclusao = true;
+                        if (FrmPaciente.frm != null)
+                           await FrmPaciente.frm.EfetuarConsulta();
                         Limpar();
                        
                         break;
@@ -185,7 +187,7 @@ namespace ConsultaPSI.Paciente
                 this.CarregarRegistro();
             }else
                 _pacienteViewModel = new Dominio.ViewModel.PacienteViewModel();
-
+            chkAtivo.Checked = true;
         }
 
         private void CarregarRegistro()
@@ -207,6 +209,7 @@ namespace ConsultaPSI.Paciente
             if (_operacao == enuOperacao.Incluir)
                 _pacienteViewModel = new PacienteViewModel();
             CarregarRegistro();
+            chkAtivo.Checked = true;
         }
 
         private void btnConfirmar_Click(object sender, EventArgs e)

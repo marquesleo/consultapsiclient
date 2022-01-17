@@ -2,8 +2,6 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Util;
 
@@ -36,7 +34,7 @@ namespace BOPSI
                 }
                 else if (retorno.StatusCode == System.Net.HttpStatusCode.NotFound)
                 {
-                    throw new Exception(UtilErroPsicologo.RetornarErroTratado(retorno));
+                    throw new Exception(UtilErroLogin.RetornarErroTratado(retorno));
                 }
                 else if (retorno.StatusCode == System.Net.HttpStatusCode.OK)
                 {
@@ -78,12 +76,12 @@ namespace BOPSI
 
         }
 
-        public async Task<List<LoginViewModel>> ObterTodos()
+        public async Task<List<LoginViewModel>> ObterTodos(Guid empresa_id)
         { 
-            var retorno = UsuarioClient.ObterTodos();
+            var retorno = UsuarioClient.ObterTodos(empresa_id);
             return JsonConvert.DeserializeObject<List<LoginViewModel>>(retorno);
         }
-        public async Task<LoginViewModel> ObterTodos(Guid Id)
+        public async Task<LoginViewModel> ObterPorId(Guid Id)
         {
             var retorno = UsuarioClient.ObterPorId(Id);
             return JsonConvert.DeserializeObject<LoginViewModel>(retorno);

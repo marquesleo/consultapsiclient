@@ -37,9 +37,9 @@ namespace PSIClient
         }
        
 
-        public string ObterTodos()
+        public string ObterTodos(Guid empresa_id)
         {
-            return base.retornar("v1/usuario");
+            return base.retornar($"v1/usuario/obterporempresa/{empresa_id}");
         }
 
 

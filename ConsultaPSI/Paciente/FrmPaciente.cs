@@ -16,7 +16,9 @@ namespace ConsultaPSI.Paciente
         public FrmPaciente()
         {
             InitializeComponent();
+            frm = this;
         }
+        public static FrmPaciente frm;
 
         private BOPSI.PacienteService _PacienteService;
         private BOPSI.PacienteService PacienteService
@@ -96,7 +98,7 @@ namespace ConsultaPSI.Paciente
             }
 
         }
-        private void EfetuarConsulta()
+        public async Task  EfetuarConsulta()
         {
             OnBeginRefresh();
             try

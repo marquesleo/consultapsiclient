@@ -104,6 +104,7 @@ namespace ConsultaPSI.Consulta
                 await ConsultaService.Alterar(ConsultaIns);
                 XtraMessageBox.Show("Consulta Alterada Com Sucesso!", this.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 _HouveAlteracao = true;
+                await ConsultaPSI.FrmPrincipal.frm.RetornarConsultasNaoRealizadas();
                 this.Close();
 
             }
